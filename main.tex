@@ -1,0 +1,47 @@
+\documentclass[12pt, a5paper, twoside]{book}
+
+\usepackage{float} % incluir imagens
+\usepackage[export]{adjustbox} % centralizar
+\usepackage{subcaption} % legendas
+
+\usepackage[pass]{geometry}
+
+\usepackage{setspace}
+\onehalfspacing{}
+
+\usepackage{indentfirst}
+\usepackage[skip=0pt, indent=1.25cm]{parskip}
+
+\usepackage{ragged2e}
+\justifying{}
+
+\usepackage[portuguese]{babel}
+\usepackage{hyphsubst}
+
+\usepackage{fontspec}
+
+\newenvironment{dedication}{
+    \clearpage
+    \thispagestyle{empty}
+    \vspace*{\stretch{3}}
+    \small
+    \itshape
+    \raggedright
+}{\par\vspace*{\stretch{1}}\clearpage\normalfont} % taken from https://tex.stackexchange.com/questions/476646/how-put-title-in-a-dedication
+
+\title{História da Família, Parte II}
+\author{Teresa Cristina}
+\date{2025}
+
+
+\begin{document}
+\maketitle
+
+\begin{dedication}
+Aos meus filhos, para que, tal como ensinou Terêncio, nada que seja humano lhes seja estranho. 
+Aos que cobrarem maior fidelidade aos fatos, saibam que o que aqui vai contado, vai tal e qual a emoção esculpiu na alma e a memória arquivou sem contestar. 
+Pois nunca sabemos com exatidão o que de fato acontece. O que fica é o que nos parece e como nos parece no momento do acontecido. 
+\end{dedication}
+
+\tableofcontents
+\end{document}
