@@ -1,4 +1,4 @@
-\documentclass[12pt, a5paper, twoside]{book}
+\documentclass[11pt, a5paper, twoside]{book}
 
 \usepackage{float} % incluir imagens
 \usepackage[export]{adjustbox} % centralizar
@@ -9,7 +9,7 @@
 \usepackage[pass]{geometry}
 
 \usepackage{setspace}
-\onehalfspacing{}
+\setstretch{1.2}
 
 \usepackage{indentfirst}
 \usepackage[skip=0pt, indent=1.25cm]{parskip}
@@ -21,6 +21,8 @@
 \usepackage{hyphsubst}
 
 \usepackage{fontspec}
+\usepackage{hyphenat}
+\hyphenation{pre-pa-ra-va=me}
 
 \newenvironment{dedication}{
     \clearpage
@@ -43,6 +45,7 @@
 \maketitle 
 \end{titlepage}
 
+
 \begin{dedication}
 Aos meus filhos, para que, tal como ensinou Terêncio, nada que seja humano, seja-lhes estranho. 
 Aos que cobrarem maior fidelidade aos fatos, saibam que o que aqui vai contado, vai tal e qual a emoção esculpiu na alma e a memória arquivou sem contestar. 
@@ -55,4 +58,5 @@ O que fica é o que nos parece e como nos parece no momento do acontecido.
 \include{chap/1}
 \include{chap/2}
 \include{chap/3}
+\include{chap/4}
 \end{document}
