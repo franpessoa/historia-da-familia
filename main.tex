@@ -3,6 +3,8 @@
 \usepackage{float} % incluir imagens
 \usepackage[export]{adjustbox} % centralizar
 \usepackage{subcaption} % legendas
+\usepackage{graphicx}
+\graphicspath{ {pic/} }
 
 \usepackage[pass]{geometry}
 
@@ -33,15 +35,23 @@
 \author{Teresa Cristina}
 \date{2025}
 
+\renewcommand{\thechapter}{\Roman{chapter}}
 
 \begin{document}
-\maketitle
+
+\begin{titlepage}
+\maketitle 
+\end{titlepage}
 
 \begin{dedication}
-Aos meus filhos, para que, tal como ensinou Terêncio, nada que seja humano lhes seja estranho. 
+Aos meus filhos, para que, tal como ensinou Terêncio, nada que seja humano, lhes seja estranho. 
 Aos que cobrarem maior fidelidade aos fatos, saibam que o que aqui vai contado, vai tal e qual a emoção esculpiu na alma e a memória arquivou sem contestar. 
-Pois nunca sabemos com exatidão o que de fato acontece. O que fica é o que nos parece e como nos parece no momento do acontecido. 
+Pois nunca sabemos com exatidão o que de fato acontece. 
+O que fica é o que nos parece e como nos parece no momento do acontecido. 
 \end{dedication}
 
 \tableofcontents
+
+\include{chap/1}
+\include{chap/2}
 \end{document}
