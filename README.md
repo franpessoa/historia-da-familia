@@ -1,4 +1,4 @@
 # Todo
-
- - Colocar negritos que estão faltando do texto original.
+ - Colocar negritos que estão faltando em relação do texto original.
  - Potencialmente tirar restrição `[H]` das fotos para melhor posicionamento, principalmente nos primeiros capítulos.
+ - Formatar os diálogos propriamente
