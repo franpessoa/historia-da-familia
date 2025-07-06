@@ -42,10 +42,7 @@
     \small
     \itshape
     \raggedleft
-}{\par\vspace*{\stretch{1}}\cleardoublepage\normalfont\justifying} % taken from https://tex.stackexchange.com/questions/476646/how-put-title-in-a-dedication
-
-\usepackage{tocloft}
-\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+}{\par\vspace*{\stretch{1}}\normalfont\justifying} % taken from https://tex.stackexchange.com/questions/476646/how-put-title-in-a-dedication
 
 \title{História da Família, Parte II}
 \author{Teresa Cristina}
@@ -53,12 +50,8 @@
 
 \renewcommand{\thechapter}{\Roman{chapter}}
 
-\addto\captionsportuguese{
-    \renewcommand{\contentsname}{Sumário}
-}
-
 \begin{document}
-
+\frontmatter
 \begin{titlepage}
 \maketitle 
 \end{titlepage}
@@ -74,10 +67,7 @@ Pois nunca sabemos com exatidão o que de fato acontece. \\
 O que fica é o que nos parece e \\como nos parece no momento do acontecido. 
 \end{dedication}
 
-\renewcommand{\baselinestretch}{0.2}\normalsize
-\tableofcontents
-\singlespacing
-
+\mainmatter
 \include{chap/1}
 \include{chap/2}
 \include{chap/3}
@@ -121,5 +111,6 @@ O que fica é o que nos parece e \\como nos parece no momento do acontecido.
 \include{chap/41}
 \include{chap/42}
 
+\backmatter
 \include{chap/ps}
 \end{document}
