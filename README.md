@@ -3,3 +3,5 @@
  - Potencialmente tirar restrição `[H]` das fotos para melhor posicionamento, principalmente nos primeiros capítulos.
  - Formatar os diálogos propriamente
  - A figura 0 do capítulo 31 / tire `\ContinuedFloat`
+ - revisar se todas as siglas que o público jovem pode não entender estão propriamente introduzidas
+    - SUDAM, SUDENE, etc.
