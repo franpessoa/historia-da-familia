@@ -56,6 +56,8 @@
 
 \renewcommand{\thechapter}{\Roman{chapter}}
 
+\usepackage{fancyhdr}
+
 \begin{document}
 \frontmatter
 \begin{titlepage}
@@ -118,5 +120,6 @@ O que fica é o que nos parece e \\como nos parece no momento do acontecido.
 \include{chap/42}
 
 \backmatter
+\fancyhead[LE]{}
 \include{chap/ps}
 \end{document}
