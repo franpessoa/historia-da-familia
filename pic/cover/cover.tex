@@ -1,0 +1,18 @@
+\documentclass[cover=a5, spinewidth=2cm]{bookcover}
+\PassOptionsToPackage{cmyk}{xcolor}
+\usepackage{pst-all}
+
+\usepackage{fontspec}
+
+\definecolor{preto-fundo}{cmyk}{0,0.4167,0.0556,0.8588}
+
+\begin{document}
+\begin{bookcover}
+\bookcovercomponent{color}{spine}{black}
+\bookcovercomponent{center}{spine}{
+    \rotatebox[origin=c]{-90}{\fontspec{Chloe}\selectfont\Huge{\color{white}{História da Família}}}
+}
+\bookcovercomponent{picture}{front}{./capa.jpg-1.jpg}
+\bookcovercomponent{picture}{back}{./contracapa.jpg}
+\end{bookcover}
+\end{document}
